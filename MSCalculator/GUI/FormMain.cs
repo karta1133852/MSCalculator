@@ -141,12 +141,12 @@ namespace MSCalculator
         pictureBoxARCMaxLv1, pictureBoxARCMaxLv2, pictureBoxARCMaxLv3,
         pictureBoxARCMaxLv4, pictureBoxARCMaxLv5
       };
-      pictureBoxArcIncs = new PictureBox[4, 5]
+      pictureBoxArcIncs = new PictureBox[4, 7]
       {
-        {pictureBoxARCIncPlus1, pictureBoxARCInc11, pictureBoxARCInc12, pictureBoxARCInc13, pictureBoxARCInc14 },
-        {pictureBoxARCIncPlus2, pictureBoxARCInc21, pictureBoxARCInc22, pictureBoxARCInc23, pictureBoxARCInc24 },
-        {pictureBoxARCIncPlus3, pictureBoxARCInc31, pictureBoxARCInc32, pictureBoxARCInc33, pictureBoxARCInc34 },
-        {pictureBoxARCIncPlus4, pictureBoxARCInc41, pictureBoxARCInc42, pictureBoxARCInc43, pictureBoxARCInc44 }
+        {pictureBoxARCIncPlus1, pictureBoxARCInc11, pictureBoxARCInc12, pictureBoxARCInc13, pictureBoxARCInc14, pictureBoxARCInc15, pictureBoxARCInc16 },
+        {pictureBoxARCIncPlus2, pictureBoxARCInc21, pictureBoxARCInc22, pictureBoxARCInc23, pictureBoxARCInc24, pictureBoxARCInc25, pictureBoxARCInc26 },
+        {pictureBoxARCIncPlus3, pictureBoxARCInc31, pictureBoxARCInc32, pictureBoxARCInc33, pictureBoxARCInc34, pictureBoxARCInc35, pictureBoxARCInc36 },
+        {pictureBoxARCIncPlus4, pictureBoxARCInc41, pictureBoxARCInc42, pictureBoxARCInc43, pictureBoxARCInc44, pictureBoxARCInc45, pictureBoxARCInc46 }
       };
     }
 
@@ -185,23 +185,23 @@ namespace MSCalculator
         incMainState = ARC / 10 * 39;
         for (int i = 0; i < 4; i++)
         {
-          for (int j = 0; j < 5; j++)
+          for (int j = 0; j < 7; j++)
           {
             pictureBoxArcIncs[i, j].Visible = true;
           }
-          pictureBoxArcIncs[i, 0].Location = new Point(715, pictureBoxArcIncs[i, 0].Location.Y);
-          int incNum = (i == 1) ? ARC : incMainState;
+          pictureBoxArcIncs[i, 0].Location = new Point(690, pictureBoxArcIncs[i, 0].Location.Y);
+          int incNum = (i == 0) ? ARC : incMainState;
           bool isNum = false;
-          for (int j = 4; j >= 1; j--)
+          for (int j = 6; j >= 1; j--)
           {
             int num = incNum / (int)Math.Pow(10, j - 1);
             if (num == 0 && !isNum)
             {
-              pictureBoxArcIncs[i, 5 - j].Visible = false;
+              pictureBoxArcIncs[i, 7 - j].Visible = false;
               pictureBoxArcIncs[i, 0].Location = new Point(pictureBoxArcIncs[i, 0].Location.X + 12, pictureBoxArcIncs[i, 0].Location.Y);
             }
             else isNum = true;
-            pictureBoxArcIncs[i, 5 - j].BackgroundImage = bitmapArcInc[num];
+            pictureBoxArcIncs[i, 7 - j].BackgroundImage = bitmapArcInc[num];
             incNum -= num * (int)Math.Pow(10, j - 1);
           }
         }
@@ -209,34 +209,50 @@ namespace MSCalculator
       else
       {
         incMainState = ARC * 10;
+        pictureBoxARCIncState.BackgroundImage = Properties.Resources.arcINT;
         for (int i = 0; i < 4; i++)
         {
-          pictureBoxArcIncs[i, 0].Location = new Point(715, pictureBoxArcIncs[i, 0].Location.Y);
+          pictureBoxArcIncs[i, 0].Location = new Point(690, pictureBoxArcIncs[i, 0].Location.Y);
           int incNum = (i == 1) ? ARC : incMainState;
           bool isNum = false;
-          for (int j = 4; j >= 1; j--)
+          for (int j = 6; j >= 1; j--)
           {
+            pictureBoxArcIncs[i, 7 - j].Visible = true;
             int num = incNum / (int)Math.Pow(10, j - 1);
             if (num == 0 && !isNum)
             {
-              pictureBoxArcIncs[i, 5 - j].Visible = false;
+              pictureBoxArcIncs[i, 7 - j].Visible = false;
               pictureBoxArcIncs[i, 0].Location = new Point(pictureBoxArcIncs[i, 0].Location.X + 12, pictureBoxArcIncs[i, 0].Location.Y);
             }
             else isNum = true;
-            pictureBoxArcIncs[i, 5 - j].BackgroundImage = bitmapArcInc[num];
+            pictureBoxArcIncs[i, 7 - j].BackgroundImage = bitmapArcInc[num];
             incNum -= num * (int)Math.Pow(10, j - 1);
           }
           
 
           if (i == 0 || i == 3)
           {
-            for (int j = 0; j < 5; j++)
+            for (int j = 0; j < 7; j++)
             {
               pictureBoxArcIncs[i, j].Visible = false;
             }
           }
         }
       }
+    }
+
+    private void CreateArcIncPictureBox()
+    {
+      PictureBox pictureBoxArcInc = new PictureBox();
+      pictureBoxArcInc.BackColor = System.Drawing.Color.Transparent;
+      pictureBoxArcInc.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      pictureBoxArcInc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      pictureBoxArcInc.Location = new System.Drawing.Point(727, 140);
+      pictureBoxArcInc.Name = "pictureBoxARCInc";
+      pictureBoxArcInc.Size = new System.Drawing.Size(12, 19);
+      pictureBoxArcInc.TabIndex = 69;
+      pictureBoxArcInc.TabStop = false;
+      this.Controls.Add(pictureBoxArcInc);
     }
 
     private void Form1_MouseClick(object sender, MouseEventArgs e)
