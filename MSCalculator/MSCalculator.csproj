@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\background\equipment3.png" />
     <Content Include="Resources\background\equipPants.png" />
     <Content Include="Resources\background\equipSpecial.png" />
     <None Include="Resources\item\arcane\arcXENON.png" />
@@ -175,6 +176,17 @@
     <None Include="Resources\item\arcane\arcDEX.png" />
     <None Include="Resources\item\arcane\arcINT.png" />
     <None Include="Resources\item\arcane\arcLUK.png" />
+    <None Include="Resources\item\arcane\arcInc1.png" />
+    <None Include="Resources\item\arcane\arcInc2.png" />
+    <None Include="Resources\item\arcane\arcInc3.png" />
+    <None Include="Resources\item\arcane\arcInc4.png" />
+    <None Include="Resources\item\arcane\arcInc5.png" />
+    <None Include="Resources\item\arcane\arcInc6.png" />
+    <None Include="Resources\item\arcane\arcInc7.png" />
+    <None Include="Resources\item\arcane\arcInc8.png" />
+    <None Include="Resources\item\arcane\arcInc9.png" />
+    <None Include="Resources\item\arcane\arcIncPlus.png" />
+    <None Include="Resources\item\arcane\arcInc0.png" />
     <Content Include="Resources\item\arcane\arcLvMax.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

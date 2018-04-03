@@ -44,11 +44,25 @@ namespace MSCalculator
       Properties.Resources.arcLv8,
       Properties.Resources.arcLv9
     };
+    private Bitmap[] bitmapArcInc =
+    {
+      Properties.Resources.arcInc0,
+      Properties.Resources.arcInc1,
+      Properties.Resources.arcInc2,
+      Properties.Resources.arcInc3,
+      Properties.Resources.arcInc4,
+      Properties.Resources.arcInc5,
+      Properties.Resources.arcInc6,
+      Properties.Resources.arcInc7,
+      Properties.Resources.arcInc8,
+      Properties.Resources.arcInc9
+    };
     private int tab = 0;
     private CharacterData characterData;
     private PictureBox[] pictureBoxARCs, pictureBoxArcLvLabels;
     private PictureBox[,] pictureBoxArcLvs;
     private PictureBox[] pictureBoxArcMaxLvs;
+    private PictureBox[,] pictureBoxArcIncs;
 
     public FormMain()
     {
@@ -98,10 +112,16 @@ namespace MSCalculator
       pictureBoxArcLvLabel5.Location = new Point(674, 406);
       pictureBoxArcLv51.Location = new Point(709, 406);
       pictureBoxArcLv52.Location = new Point(720, 406);*/
-
+      
       characterData = new CharacterData();
 
-      pictureBoxARCs = new PictureBox[5] 
+      GetComponent();
+      RefreshARC();
+    }
+
+    private void GetComponent()
+    {
+      pictureBoxARCs = new PictureBox[5]
       {
         pictureBoxARC1, pictureBoxARC2, pictureBoxARC3,
         pictureBoxARC4, pictureBoxARC5
@@ -113,7 +133,7 @@ namespace MSCalculator
       };
       pictureBoxArcLvs = new PictureBox[5, 2]
       {
-        {pictureBoxArcLv11, pictureBoxArcLv12 }, {pictureBoxArcLv21, pictureBoxArcLv22 }, {pictureBoxArcLv31, pictureBoxArcLv32 }, 
+        {pictureBoxArcLv11, pictureBoxArcLv12 }, {pictureBoxArcLv21, pictureBoxArcLv22 }, {pictureBoxArcLv31, pictureBoxArcLv32 },
         {pictureBoxArcLv41, pictureBoxArcLv42 }, {pictureBoxArcLv51, pictureBoxArcLv52 }
       };
       pictureBoxArcMaxLvs = new PictureBox[5]
@@ -121,16 +141,25 @@ namespace MSCalculator
         pictureBoxARCMaxLv1, pictureBoxARCMaxLv2, pictureBoxARCMaxLv3,
         pictureBoxARCMaxLv4, pictureBoxARCMaxLv5
       };
-
-      RefreshARC();
+      pictureBoxArcIncs = new PictureBox[4, 5]
+      {
+        {pictureBoxARCIncPlus1, pictureBoxARCInc11, pictureBoxARCInc12, pictureBoxARCInc13, pictureBoxARCInc14 },
+        {pictureBoxARCIncPlus2, pictureBoxARCInc21, pictureBoxARCInc22, pictureBoxARCInc23, pictureBoxARCInc24 },
+        {pictureBoxARCIncPlus3, pictureBoxARCInc31, pictureBoxARCInc32, pictureBoxARCInc33, pictureBoxARCInc34 },
+        {pictureBoxARCIncPlus4, pictureBoxARCInc41, pictureBoxARCInc42, pictureBoxARCInc43, pictureBoxARCInc44 }
+      };
     }
 
     public void RefreshARC()
     {
+      int ARC = 0;
+      int incStateQty = 1, incMainState = 0;
       for (int i = 0; i < MSData.arcQty; i++)
       {
         if (characterData.isArcEquiped[i])
         {
+          ARC += 20 + characterData.arcLv[i] * 10;
+
           pictureBoxARCs[i].Visible = true;
           pictureBoxArcLvLabels[i].Visible = true;
           if (characterData.arcLv[i] < 10) pictureBoxArcLvs[i, 0].Visible = false;
@@ -147,6 +176,65 @@ namespace MSCalculator
           pictureBoxArcLvLabels[i].Visible = false;
           pictureBoxArcLvs[i, 0].Visible = pictureBoxArcLvs[i, 1].Visible = false;
           pictureBoxArcMaxLvs[i].Visible = false;
+        }
+      }
+
+      if (true)  //職業為傑諾 //三屬加成
+      {
+        incStateQty = 3;
+        incMainState = ARC / 10 * 39;
+        for (int i = 0; i < 4; i++)
+        {
+          for (int j = 0; j < 5; j++)
+          {
+            pictureBoxArcIncs[i, j].Visible = true;
+          }
+          pictureBoxArcIncs[i, 0].Location = new Point(715, pictureBoxArcIncs[i, 0].Location.Y);
+          int incNum = (i == 1) ? ARC : incMainState;
+          bool isNum = false;
+          for (int j = 4; j >= 1; j--)
+          {
+            int num = incNum / (int)Math.Pow(10, j - 1);
+            if (num == 0 && !isNum)
+            {
+              pictureBoxArcIncs[i, 5 - j].Visible = false;
+              pictureBoxArcIncs[i, 0].Location = new Point(pictureBoxArcIncs[i, 0].Location.X + 12, pictureBoxArcIncs[i, 0].Location.Y);
+            }
+            else isNum = true;
+            pictureBoxArcIncs[i, 5 - j].BackgroundImage = bitmapArcInc[num];
+            incNum -= num * (int)Math.Pow(10, j - 1);
+          }
+        }
+      }
+      else
+      {
+        incMainState = ARC * 10;
+        for (int i = 0; i < 4; i++)
+        {
+          pictureBoxArcIncs[i, 0].Location = new Point(715, pictureBoxArcIncs[i, 0].Location.Y);
+          int incNum = (i == 1) ? ARC : incMainState;
+          bool isNum = false;
+          for (int j = 4; j >= 1; j--)
+          {
+            int num = incNum / (int)Math.Pow(10, j - 1);
+            if (num == 0 && !isNum)
+            {
+              pictureBoxArcIncs[i, 5 - j].Visible = false;
+              pictureBoxArcIncs[i, 0].Location = new Point(pictureBoxArcIncs[i, 0].Location.X + 12, pictureBoxArcIncs[i, 0].Location.Y);
+            }
+            else isNum = true;
+            pictureBoxArcIncs[i, 5 - j].BackgroundImage = bitmapArcInc[num];
+            incNum -= num * (int)Math.Pow(10, j - 1);
+          }
+          
+
+          if (i == 0 || i == 3)
+          {
+            for (int j = 0; j < 5; j++)
+            {
+              pictureBoxArcIncs[i, j].Visible = false;
+            }
+          }
         }
       }
     }

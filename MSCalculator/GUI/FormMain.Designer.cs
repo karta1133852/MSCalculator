@@ -55,6 +55,26 @@
       this.pictureBoxARCMaxLv3 = new System.Windows.Forms.PictureBox();
       this.pictureBoxARCMaxLv2 = new System.Windows.Forms.PictureBox();
       this.pictureBox1 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc24 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc23 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc22 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc34 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCIncPlus2 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc33 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc32 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc31 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCIncPlus3 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc21 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc11 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCIncPlus1 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc12 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc13 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc14 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc41 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCIncPlus4 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc42 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc43 = new System.Windows.Forms.PictureBox();
+      this.pictureBoxARCInc44 = new System.Windows.Forms.PictureBox();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARC1)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARC2)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARC3)).BeginInit();
@@ -81,6 +101,26 @@
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCMaxLv3)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCMaxLv2)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc24)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc23)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc22)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc34)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus2)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc33)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc32)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc31)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus3)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc21)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc11)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus1)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc12)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc13)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc14)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc41)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus4)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc42)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc43)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc44)).BeginInit();
       this.SuspendLayout();
       // 
       // pictureBoxARC1
@@ -381,7 +421,7 @@
       // pictureBox1
       // 
       this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-      this.pictureBox1.BackgroundImage = global::MSCalculator.Properties.Resources.arcINT;
+      this.pictureBox1.BackgroundImage = global::MSCalculator.Properties.Resources.arcXENON;
       this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
       this.pictureBox1.Location = new System.Drawing.Point(623, 58);
       this.pictureBox1.Name = "pictureBox1";
@@ -389,14 +429,254 @@
       this.pictureBox1.TabIndex = 49;
       this.pictureBox1.TabStop = false;
       // 
+      // pictureBoxARCInc24
+      // 
+      this.pictureBoxARCInc24.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc24.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc24.Location = new System.Drawing.Point(763, 84);
+      this.pictureBoxARCInc24.Name = "pictureBoxARCInc24";
+      this.pictureBoxARCInc24.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc24.TabIndex = 50;
+      this.pictureBoxARCInc24.TabStop = false;
+      // 
+      // pictureBoxARCInc23
+      // 
+      this.pictureBoxARCInc23.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc23.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc23.Location = new System.Drawing.Point(751, 84);
+      this.pictureBoxARCInc23.Name = "pictureBoxARCInc23";
+      this.pictureBoxARCInc23.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc23.TabIndex = 51;
+      this.pictureBoxARCInc23.TabStop = false;
+      // 
+      // pictureBoxARCInc22
+      // 
+      this.pictureBoxARCInc22.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc22.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc22.Location = new System.Drawing.Point(739, 84);
+      this.pictureBoxARCInc22.Name = "pictureBoxARCInc22";
+      this.pictureBoxARCInc22.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc22.TabIndex = 52;
+      this.pictureBoxARCInc22.TabStop = false;
+      // 
+      // pictureBoxARCInc34
+      // 
+      this.pictureBoxARCInc34.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc34.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc34.Location = new System.Drawing.Point(763, 112);
+      this.pictureBoxARCInc34.Name = "pictureBoxARCInc34";
+      this.pictureBoxARCInc34.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc34.TabIndex = 53;
+      this.pictureBoxARCInc34.TabStop = false;
+      // 
+      // pictureBoxARCIncPlus2
+      // 
+      this.pictureBoxARCIncPlus2.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCIncPlus2.BackgroundImage = global::MSCalculator.Properties.Resources.arcIncPlus;
+      this.pictureBoxARCIncPlus2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCIncPlus2.Location = new System.Drawing.Point(715, 84);
+      this.pictureBoxARCIncPlus2.Name = "pictureBoxARCIncPlus2";
+      this.pictureBoxARCIncPlus2.Size = new System.Drawing.Size(12, 15);
+      this.pictureBoxARCIncPlus2.TabIndex = 54;
+      this.pictureBoxARCIncPlus2.TabStop = false;
+      // 
+      // pictureBoxARCInc33
+      // 
+      this.pictureBoxARCInc33.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc33.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc33.Location = new System.Drawing.Point(752, 112);
+      this.pictureBoxARCInc33.Name = "pictureBoxARCInc33";
+      this.pictureBoxARCInc33.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc33.TabIndex = 55;
+      this.pictureBoxARCInc33.TabStop = false;
+      // 
+      // pictureBoxARCInc32
+      // 
+      this.pictureBoxARCInc32.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc32.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc32.Location = new System.Drawing.Point(739, 112);
+      this.pictureBoxARCInc32.Name = "pictureBoxARCInc32";
+      this.pictureBoxARCInc32.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc32.TabIndex = 56;
+      this.pictureBoxARCInc32.TabStop = false;
+      // 
+      // pictureBoxARCInc31
+      // 
+      this.pictureBoxARCInc31.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc31.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc31.Location = new System.Drawing.Point(727, 112);
+      this.pictureBoxARCInc31.Name = "pictureBoxARCInc31";
+      this.pictureBoxARCInc31.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc31.TabIndex = 57;
+      this.pictureBoxARCInc31.TabStop = false;
+      // 
+      // pictureBoxARCIncPlus3
+      // 
+      this.pictureBoxARCIncPlus3.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCIncPlus3.BackgroundImage = global::MSCalculator.Properties.Resources.arcIncPlus;
+      this.pictureBoxARCIncPlus3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCIncPlus3.Location = new System.Drawing.Point(715, 112);
+      this.pictureBoxARCIncPlus3.Name = "pictureBoxARCIncPlus3";
+      this.pictureBoxARCIncPlus3.Size = new System.Drawing.Size(12, 15);
+      this.pictureBoxARCIncPlus3.TabIndex = 58;
+      this.pictureBoxARCIncPlus3.TabStop = false;
+      // 
+      // pictureBoxARCInc21
+      // 
+      this.pictureBoxARCInc21.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc21.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc21.Location = new System.Drawing.Point(727, 84);
+      this.pictureBoxARCInc21.Name = "pictureBoxARCInc21";
+      this.pictureBoxARCInc21.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc21.TabIndex = 59;
+      this.pictureBoxARCInc21.TabStop = false;
+      // 
+      // pictureBoxARCInc11
+      // 
+      this.pictureBoxARCInc11.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc11.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc11.Location = new System.Drawing.Point(727, 56);
+      this.pictureBoxARCInc11.Name = "pictureBoxARCInc11";
+      this.pictureBoxARCInc11.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc11.TabIndex = 64;
+      this.pictureBoxARCInc11.TabStop = false;
+      // 
+      // pictureBoxARCIncPlus1
+      // 
+      this.pictureBoxARCIncPlus1.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCIncPlus1.BackgroundImage = global::MSCalculator.Properties.Resources.arcIncPlus;
+      this.pictureBoxARCIncPlus1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCIncPlus1.Location = new System.Drawing.Point(715, 56);
+      this.pictureBoxARCIncPlus1.Name = "pictureBoxARCIncPlus1";
+      this.pictureBoxARCIncPlus1.Size = new System.Drawing.Size(12, 15);
+      this.pictureBoxARCIncPlus1.TabIndex = 63;
+      this.pictureBoxARCIncPlus1.TabStop = false;
+      // 
+      // pictureBoxARCInc12
+      // 
+      this.pictureBoxARCInc12.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc12.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc12.Location = new System.Drawing.Point(739, 56);
+      this.pictureBoxARCInc12.Name = "pictureBoxARCInc12";
+      this.pictureBoxARCInc12.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc12.TabIndex = 62;
+      this.pictureBoxARCInc12.TabStop = false;
+      // 
+      // pictureBoxARCInc13
+      // 
+      this.pictureBoxARCInc13.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc13.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc13.Location = new System.Drawing.Point(751, 56);
+      this.pictureBoxARCInc13.Name = "pictureBoxARCInc13";
+      this.pictureBoxARCInc13.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc13.TabIndex = 61;
+      this.pictureBoxARCInc13.TabStop = false;
+      // 
+      // pictureBoxARCInc14
+      // 
+      this.pictureBoxARCInc14.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc14.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc14.Location = new System.Drawing.Point(763, 56);
+      this.pictureBoxARCInc14.Name = "pictureBoxARCInc14";
+      this.pictureBoxARCInc14.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc14.TabIndex = 60;
+      this.pictureBoxARCInc14.TabStop = false;
+      // 
+      // pictureBoxARCInc41
+      // 
+      this.pictureBoxARCInc41.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc41.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc41.Location = new System.Drawing.Point(727, 140);
+      this.pictureBoxARCInc41.Name = "pictureBoxARCInc41";
+      this.pictureBoxARCInc41.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc41.TabIndex = 69;
+      this.pictureBoxARCInc41.TabStop = false;
+      // 
+      // pictureBoxARCIncPlus4
+      // 
+      this.pictureBoxARCIncPlus4.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCIncPlus4.BackgroundImage = global::MSCalculator.Properties.Resources.arcIncPlus;
+      this.pictureBoxARCIncPlus4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCIncPlus4.Location = new System.Drawing.Point(715, 140);
+      this.pictureBoxARCIncPlus4.Name = "pictureBoxARCIncPlus4";
+      this.pictureBoxARCIncPlus4.Size = new System.Drawing.Size(12, 15);
+      this.pictureBoxARCIncPlus4.TabIndex = 68;
+      this.pictureBoxARCIncPlus4.TabStop = false;
+      // 
+      // pictureBoxARCInc42
+      // 
+      this.pictureBoxARCInc42.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc42.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc42.Location = new System.Drawing.Point(739, 140);
+      this.pictureBoxARCInc42.Name = "pictureBoxARCInc42";
+      this.pictureBoxARCInc42.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc42.TabIndex = 67;
+      this.pictureBoxARCInc42.TabStop = false;
+      // 
+      // pictureBoxARCInc43
+      // 
+      this.pictureBoxARCInc43.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc43.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc43.Location = new System.Drawing.Point(751, 140);
+      this.pictureBoxARCInc43.Name = "pictureBoxARCInc43";
+      this.pictureBoxARCInc43.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc43.TabIndex = 66;
+      this.pictureBoxARCInc43.TabStop = false;
+      // 
+      // pictureBoxARCInc44
+      // 
+      this.pictureBoxARCInc44.BackColor = System.Drawing.Color.Transparent;
+      this.pictureBoxARCInc44.BackgroundImage = global::MSCalculator.Properties.Resources.arcInc0;
+      this.pictureBoxARCInc44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+      this.pictureBoxARCInc44.Location = new System.Drawing.Point(763, 140);
+      this.pictureBoxARCInc44.Name = "pictureBoxARCInc44";
+      this.pictureBoxARCInc44.Size = new System.Drawing.Size(12, 19);
+      this.pictureBoxARCInc44.TabIndex = 65;
+      this.pictureBoxARCInc44.TabStop = false;
+      // 
       // FormMain
       // 
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
       this.AutoSize = true;
       this.BackColor = System.Drawing.Color.Black;
-      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.BackgroundImage = global::MSCalculator.Properties.Resources.equipment;
       this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
       this.ClientSize = new System.Drawing.Size(840, 519);
+      this.Controls.Add(this.pictureBoxARCInc41);
+      this.Controls.Add(this.pictureBoxARCIncPlus4);
+      this.Controls.Add(this.pictureBoxARCInc42);
+      this.Controls.Add(this.pictureBoxARCInc43);
+      this.Controls.Add(this.pictureBoxARCInc44);
+      this.Controls.Add(this.pictureBoxARCInc11);
+      this.Controls.Add(this.pictureBoxARCIncPlus1);
+      this.Controls.Add(this.pictureBoxARCInc12);
+      this.Controls.Add(this.pictureBoxARCInc13);
+      this.Controls.Add(this.pictureBoxARCInc14);
+      this.Controls.Add(this.pictureBoxARCInc21);
+      this.Controls.Add(this.pictureBoxARCIncPlus3);
+      this.Controls.Add(this.pictureBoxARCInc31);
+      this.Controls.Add(this.pictureBoxARCInc32);
+      this.Controls.Add(this.pictureBoxARCInc33);
+      this.Controls.Add(this.pictureBoxARCIncPlus2);
+      this.Controls.Add(this.pictureBoxARCInc34);
+      this.Controls.Add(this.pictureBoxARCInc22);
+      this.Controls.Add(this.pictureBoxARCInc23);
+      this.Controls.Add(this.pictureBoxARCInc24);
       this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.pictureBoxARCMaxLv2);
       this.Controls.Add(this.pictureBoxARCMaxLv3);
@@ -458,6 +738,26 @@
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCMaxLv3)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCMaxLv2)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc24)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc23)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc22)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc34)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus2)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc33)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc32)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc31)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus3)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc21)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc11)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus1)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc12)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc13)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc14)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc41)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCIncPlus4)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc42)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc43)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBoxARCInc44)).EndInit();
       this.ResumeLayout(false);
 
         }
@@ -490,6 +790,26 @@
     private System.Windows.Forms.PictureBox pictureBoxARCMaxLv3;
     private System.Windows.Forms.PictureBox pictureBoxARCMaxLv2;
     private System.Windows.Forms.PictureBox pictureBox1;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc24;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc23;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc22;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc34;
+    private System.Windows.Forms.PictureBox pictureBoxARCIncPlus2;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc33;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc32;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc31;
+    private System.Windows.Forms.PictureBox pictureBoxARCIncPlus3;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc21;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc11;
+    private System.Windows.Forms.PictureBox pictureBoxARCIncPlus1;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc12;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc13;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc14;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc41;
+    private System.Windows.Forms.PictureBox pictureBoxARCIncPlus4;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc42;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc43;
+    private System.Windows.Forms.PictureBox pictureBoxARCInc44;
   }
 }
 
