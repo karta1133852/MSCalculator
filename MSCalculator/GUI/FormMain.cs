@@ -9,7 +9,7 @@ namespace MSCalculator
   public partial class FormMain : Form
   {
     private Point mouse_offset;
-    private bool isTitle = false;
+    private bool isTitleBar = false;
 
     private String[] EquipCat = 
     {
@@ -69,6 +69,9 @@ namespace MSCalculator
       InitializeComponent();
 
       Init();
+
+      FormCharacterState formCharacterState = new FormCharacterState();
+      formCharacterState.Show();
     }
     
     private void Init()
@@ -153,11 +156,13 @@ namespace MSCalculator
     public void RefreshARC()
     {
       int ARC = 0;
-      int incStateQty = 1, incMainState = 0;
+      int incMainState = 0;
+      int equipedARCQty = 0;
       for (int i = 0; i < MSData.arcQty; i++)
       {
         if (characterData.isArcEquiped[i])
         {
+          equipedARCQty++;
           ARC += 20 + characterData.arcLv[i] * 10;
 
           pictureBoxARCs[i].Visible = true;
@@ -179,9 +184,8 @@ namespace MSCalculator
         }
       }
 
-      if (true)  //職業為傑諾 //三屬加成
+      if (false)  //職業為傑諾 //三屬加成
       {
-        incStateQty = 3;
         incMainState = ARC / 10 * 39;
         for (int i = 0; i < 4; i++)
         {
@@ -208,8 +212,16 @@ namespace MSCalculator
       }
       else
       {
-        incMainState = ARC * 10;
-        pictureBoxARCIncState.BackgroundImage = Properties.Resources.arcINT;
+        if (false)
+        { //職業為惡復 //主屬HP
+          incMainState = (ARC - 30 * equipedARCQty) * 175 + 4200 * equipedARCQty;
+          pictureBoxARCIncState.BackgroundImage = Properties.Resources.arcHP;
+        }
+        else  //正常職業
+        {
+          incMainState = ARC * 10;
+          pictureBoxARCIncState.BackgroundImage = Properties.Resources.arcINT;
+        }
         for (int i = 0; i < 4; i++)
         {
           pictureBoxArcIncs[i, 0].Location = new Point(690, pictureBoxArcIncs[i, 0].Location.Y);
@@ -255,7 +267,7 @@ namespace MSCalculator
       this.Controls.Add(pictureBoxArcInc);
     }
 
-    private void Form1_MouseClick(object sender, MouseEventArgs e)
+    private void FormMain_MouseClick(object sender, MouseEventArgs e)
     {
       //MessageBox.Show("X : " + e.X);
       //MessageBox.Show("Y : " + e.Y);
@@ -439,13 +451,13 @@ namespace MSCalculator
 
     private void FormMain_MouseDown(object sender, MouseEventArgs e)
     {
-      isTitle = (e.X >= 214 && e.X <= 554 && e.Y <= 26) && !(e.X >= 532 && e.Y >= 8 && e.X <= 544 && e.Y <= 21);
+      isTitleBar = (e.X >= 214 && e.X <= 554 && e.Y <= 26) && !(e.X >= 532 && e.Y >= 8 && e.X <= 544 && e.Y <= 21);
       mouse_offset = new Point(-e.X, -e.Y);
     }
 
     private void FormMain_MouseMove(object sender, MouseEventArgs e)
     {
-      if (e.Button == MouseButtons.Left && isTitle)
+      if (e.Button == MouseButtons.Left && isTitleBar)
       {
         Point mousePos = Control.MousePosition;
         mousePos.Offset(mouse_offset.X, mouse_offset.Y);
@@ -472,6 +484,7 @@ namespace MSCalculator
       {
         // Cancel the Closing event from closing the form.
         e.Cancel = true;
+        return;
       }
     }
 

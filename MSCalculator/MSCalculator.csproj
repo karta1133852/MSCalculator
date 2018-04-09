@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\FormCharacterState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormCharacterState.Designer.cs">
+      <DependentUpon>FormCharacterState.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormEquip.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormCharacterState.resx">
+      <DependentUpon>FormCharacterState.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormEquip.resx">
       <DependentUpon>FormEquip.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +178,10 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="Resources\background\equipment3.png" />
+    <None Include="Resources\background\characterState.png" />
+    <None Include="Resources\background\characterStateMask.png" />
+    <None Include="Resources\background\equipment01.png" />
+    <None Include="Resources\background\equipmentMask11.png" />
     <Content Include="Resources\background\equipPants.png" />
     <Content Include="Resources\background\equipSpecial.png" />
     <None Include="Resources\item\arcane\arcXENON.png" />
@@ -187,6 +200,7 @@
     <None Include="Resources\item\arcane\arcInc9.png" />
     <None Include="Resources\item\arcane\arcIncPlus.png" />
     <None Include="Resources\item\arcane\arcInc0.png" />
+    <None Include="Resources\item\arcane\arcHP.png" />
     <Content Include="Resources\item\arcane\arcLvMax.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

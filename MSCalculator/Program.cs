@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MSCalculator
+namespace MSCalculator.GUI
 {
     static class Program
     {
@@ -17,6 +17,7 @@ namespace MSCalculator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
-        }
+            //Application.Run(new FormCharacterState());
+    }
     }
 }

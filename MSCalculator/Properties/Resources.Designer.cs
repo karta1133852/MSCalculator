@@ -133,6 +133,16 @@ namespace MSCalculator.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap arcHP {
+            get {
+                object obj = ResourceManager.GetObject("arcHP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap arcInc0 {
             get {
                 object obj = ResourceManager.GetObject("arcInc0", resourceCulture);
@@ -413,6 +423,26 @@ namespace MSCalculator.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap characterState {
+            get {
+                object obj = ResourceManager.GetObject("characterState", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap characterStateMask {
+            get {
+                object obj = ResourceManager.GetObject("characterStateMask", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap equipment {
             get {
                 object obj = ResourceManager.GetObject("equipment", resourceCulture);
@@ -423,9 +453,29 @@ namespace MSCalculator.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap equipment01 {
+            get {
+                object obj = ResourceManager.GetObject("equipment01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap equipmentMask1 {
             get {
                 object obj = ResourceManager.GetObject("equipmentMask1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap equipmentMask11 {
+            get {
+                object obj = ResourceManager.GetObject("equipmentMask11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
